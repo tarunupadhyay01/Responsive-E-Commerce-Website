@@ -1,0 +1,9 @@
+{
+  "name": "fernwick-shop",
+  "version": "1.0.0",
+  "description": "Responsive full-stack e-commerce app (Express + SQLite + vanilla JS)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "better-sqlite3": "^11.5.0", "express": "^4.21.0" },
+  "license": "MIT"
+}

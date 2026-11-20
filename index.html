@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernwick – Plants &amp; Planters</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+  <span class="logo">Fernwick</span>
+  <input class="search" id="q" type="search" placeholder="Search plants and planters" aria-label="Search products">
+  <button class="ibtn" id="ordersBtn">Orders</button>
+  <button class="ibtn" id="cartBtn" aria-label="Open cart">Cart <span class="count" id="cnt">0</span></button>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Greener rooms, delivered.</h1>
+    <p>Hardy houseplants and hand-finished planters, chosen for rooms with real-life light.</p>
+  </section>
+  <div class="tools">
+    <div class="chips" id="chips"></div>
+    <label>Sort <select id="sort"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="az">Name A–Z</option></select></label>
+  </div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</main>
+<div class="scrim" id="scrim"></div>
+<aside id="panel" aria-hidden="true">
+  <div class="ph"><h2 id="ptitle">Your cart</h2><button class="ibtn" id="close">Close</button></div>
+  <div class="pb" id="pbody"></div>
+  <div class="pf" id="pfoot"></div>
+</aside>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
